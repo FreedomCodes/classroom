@@ -9,6 +9,7 @@ class RosterEntry
     end
 
     def github_handle_text
+<<<<<<< HEAD
       linked? ? '@' + roster_entry.user.github_user.login : 'Not linked'
     end
 
@@ -18,6 +19,9 @@ class RosterEntry
 
     def github_avatar_url
       roster_entry.user.github_user.github_avatar_url(96)
+=======
+      linked? ? roster_entry.user.github_user.login : 'Not linked'
+>>>>>>> refs/remotes/origin/roster_management_page
     end
 
     def button_text
