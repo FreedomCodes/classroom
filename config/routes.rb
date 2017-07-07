@@ -48,7 +48,10 @@ Rails.application.routes.draw do
         get   'settings/invitations', to: 'organizations#invitation'
         get   'settings/teams',       to: 'organizations#show_groupings'
 
-        resource :roster
+        resource :roster do
+          patch :link
+          patch :unlink
+        end
       end
 
       resources :groupings, only: %i[show edit update] do
