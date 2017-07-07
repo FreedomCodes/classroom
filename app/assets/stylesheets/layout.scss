@@ -320,6 +320,16 @@ hr {
   }
 }
 
+.student-login {
+  display: block;
+  padding-top: 4px;
+  color: $gray-dark;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
 .assignment-repo-list {
   .assignment-repo-list-item:not(:first-child) {
     padding-top: 1rem;
@@ -376,16 +386,6 @@ hr {
 
   .css-truncate-target {
     max-width: 20rem;
-  }
-
-  .student-login {
-    display: block;
-    padding-top: 4px;
-    color: $gray-dark;
-
-    &:hover {
-      color: $blue;
-    }
   }
 }
 
@@ -891,4 +891,8 @@ hr {
 
 .right-button {
   margin-left: auto;
+}
+
+.fixed-height-row {
+  height: 56px;
 }
