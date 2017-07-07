@@ -2,11 +2,7 @@
 
 class RostersController < ApplicationController
   before_action :ensure_student_identifier_flipper_is_enabled, :set_organization
-<<<<<<< HEAD
   before_action :set_roster, :set_unlinked_users, only: [:show]
-=======
-  before_action :set_roster, only: [:show]
->>>>>>> refs/remotes/origin/roster_management_page
 
   def show; end
 
@@ -40,7 +36,6 @@ class RostersController < ApplicationController
     @roster = @organization.roster
   end
 
-<<<<<<< HEAD
   # An unlinked user is a user who:
   # - Is a user on an assignment or group assignment belonging to the org
   # - Is not on the organization roster
@@ -53,8 +48,6 @@ class RostersController < ApplicationController
     @unlinked_users = (group_assignment_users + assignment_users).uniq - roster_entry_users
   end
 
-=======
->>>>>>> refs/remotes/origin/roster_management_page
   def add_identifiers_to_roster
     identifiers = split_identifiers(params[:identifiers])
     identifiers.each do |identifier|

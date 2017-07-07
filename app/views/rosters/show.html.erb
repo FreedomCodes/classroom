@@ -18,23 +18,14 @@
           <span id='students-span'>
             <div class="assignment-list-items">
               <% @roster.roster_entries.each do |roster_entry| %>
-<<<<<<< HEAD
                 <%= render 'roster_entry', roster_entry: roster_entry %>
-=======
-                <%= render 'student', roster_entry: roster_entry %>
->>>>>>> refs/remotes/origin/roster_management_page
               <% end %>
             </div>
           </span>
           <span id='unlinked-span' class='hidden-tab'>
             <div class="assignment-list-items">
-<<<<<<< HEAD
               <% @unlinked_users.each do |user| %>
                 <%= render 'unlinked_user', unlinked_user: user %>
-=======
-              <% @roster.roster_entries.each do |roster_entry| %>
-                <%= render 'student', roster_entry: @roster.roster_entries.first %>
->>>>>>> refs/remotes/origin/roster_management_page
               <% end %>
             </div>
           </span>
